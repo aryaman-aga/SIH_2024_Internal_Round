@@ -11,20 +11,23 @@ SocialCalc is a JavaScript-based spreadsheet application, originally developed b
 - [Acknowledgments](#acknowledgments)
 
 ## Features
+- **Real-Time Collaboration**:Can collaborate with your peer group.
+- **Data Persistence and Security**:Keeps data safe and secure.
 - **Spreadsheet Editor**: Create and edit spreadsheets with a familiar interface.
 - **Graphing**: Generate simple bar graphs based on selected spreadsheet data.
 - **Help Tab**: Access comprehensive help documentation directly within the application.
 - **Plain View**: Render the spreadsheet without grid lines and controls for a clean look.
 - **Clipboard Support**: Copy and paste data to and from the clipboard, including tab-delimited and CSV formats.
 - **Cross-Platform**: Runs in any modern web browser.
-
-## Installation
+  
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, etc.)
 - A web server to serve the HTML and JavaScript files (optional for local development)
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/socialcalc.git
+### Tech Stack 
+-Java Script
+-DJANGO
+-NODE JS
+-HTML
+-CSS
