@@ -27,7 +27,7 @@ SocialCalc is a JavaScript-based spreadsheet application, originally developed b
 
 ### Tech Stack 
 -Java Script
--DJANGO
 -NODE JS
 -HTML
 -CSS
+-Perl
