@@ -2,13 +2,6 @@
 
 SocialCalc is a JavaScript-based spreadsheet application, originally developed by Dan Bricklin, the creator of VisiCalc. This project brings the power of spreadsheets to the web, allowing users to create, edit, and manage spreadsheets directly in their browser.
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Features
 - **Real-Time Collaboration**:Can collaborate with your peer group.
