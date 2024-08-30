@@ -2,7 +2,7 @@
 <html>
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>SocialCalc 0.8.1</title>
+<title>SocialCalc </title>
 <script type="text/javascript" src="socialcalcconstants.js"></script>
 <script type="text/javascript" src="socialcalc-3.js"></script>
 <script type="text/javascript" src="socialcalctableeditor.js"></script>
@@ -16,8 +16,8 @@ body, td, input, texarea {font-family:verdana,helvetica,sans-serif;font-size:sma
 </style>
 </head>
 <body style="background-color:#FFF;" onresize="spreadsheet.DoOnResize();">
-<div style="margin:8px 0px 10px 0px;">
- <div id="tableeditor" style="margin:8px 0px 10px 0px;">editor goes here</div>
+<div style="margin:15px 0px 10px 0px;">
+ <div id="tableeditor" style="margin:8px 0px 20px 0px;">editor goes here</div>
 </div>
  <div id="msg" onclick="this.innerHTML='&nbsp;';"></div>
 
@@ -60,7 +60,7 @@ function setmsg(str) {document.getElementById("msg").innerHTML = str;}
       });
 
    spreadsheet.views["plain"] = {name: "plain",
-      divStyle: "border:1px solid black;overflow:auto;",
+      divStyle: "border:1px solid blue;overflow:auto;",
       html: 'Plain View'
       };
 
