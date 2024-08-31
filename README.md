@@ -4,9 +4,15 @@ SocialCalc is a JavaScript-based spreadsheet application. This project brings th
 
 ## Team Details
 -**Team-Name**: Conversational Coders
+
+
 -**Project-Title**: Build a SocialCalc (A better version of already existing)
+
+
 -**Team-Details**: 
       TEAM LEADER: ARUSHA HABIB 
+      
+      
       TEAM MEMBERS: 
             1) Arusha Habib (2023UCM2362)
             2) Vaibhav Kumar Rajput (2023UCA1801)
