@@ -1,22 +1,3 @@
-//
-/*
-// The module of the SocialCalc package for the optional popup menus in socialcalcspreadsheetcontrol.js
-//
-// (c) Copyright 2009 Socialtext, Inc.
-// All Rights Reserved.
-//
-// The contents of this file are subject to the Artistic License 2.0; you may not
-// use this file except in compliance with the License. You may obtain a copy of 
-// the License at http://socialcalc.org/licenses/al-20/.
-//
-// Some of the other files in the SocialCalc package are licensed under
-// different licenses. Please note the licenses of the modules you use.
-//
-// Code History:
-//
-// Initially coded by Dan Bricklin of Software Garden, Inc., for Socialtext, Inc.
-//
-*/
 
    var SocialCalc; // All values are stored in the master SocialCalc object
    if (!SocialCalc) {
