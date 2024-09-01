@@ -1,34 +1,3 @@
-//
-/*
-// SocialCalc Number Formatting Library
-//
-// Part of the SocialCalc package.
-//
-// (c) Copyright 2008 Socialtext, Inc.
-// All Rights Reserved.
-//
-// The contents of this file are subject to the Artistic License 2.0; you may not
-// use this file except in compliance with the License. You may obtain a copy of 
-// the License at http://socialcalc.org/licenses/al-20/.
-//
-// Some of the other files in the SocialCalc package are licensed under
-// different licenses. Please note the licenses of the modules you use.
-//
-// Code History:
-//
-// Initially coded by Dan Bricklin of Software Garden, Inc., for Socialtext, Inc.
-// Based in part on the SocialCalc 1.1.0 code written in Perl.
-// The SocialCalc 1.1.0 code was:
-//    Portions (c) Copyright 2005, 2006, 2007 Software Garden, Inc.
-//    All Rights Reserved.
-//    Portions (c) Copyright 2007 Socialtext, Inc.
-//    All Rights Reserved.
-// The Perl SocialCalc started as modifications to the wikiCalc(R) program, version 1.0.
-// wikiCalc 1.0 was written by Software Garden, Inc.
-// Unless otherwise specified, referring to "SocialCalc" in comments refers to this
-// JavaScript version of the code, not the SocialCalc Perl code.
-//
-*/
 
    var SocialCalc;
    if (!SocialCalc) SocialCalc = {}; // May be used with other SocialCalc libraries or standalone
@@ -37,13 +6,7 @@ SocialCalc.FormatNumber = {};
 
 SocialCalc.FormatNumber.format_definitions = {}; // Parsed formats are stored here globally
 
-// Most constants that are often customized for localization are in the SocialCalc.Constants module.
-// If you use this module standalone, provide at least the "FormatNumber" values.
-//
 
-// The following values may be customized externally for further localization of the format definitions themselves,
-// but that would make them incompatible with other uses and is discouraged.
-//
 
 SocialCalc.FormatNumber.separatorchar = ",";
 SocialCalc.FormatNumber.decimalchar = ".";
