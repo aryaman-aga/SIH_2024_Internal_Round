@@ -43,3 +43,12 @@ SocialCalc is a JavaScript-based spreadsheet application. This project brings th
 -HTML
 -CSS
 -Perl
+
+### Project Links
+- Internal Presentation: 
+- Final SIH Presentation: 
+- Video Demonstration: 
+- Live Deployment: 
+- Source Code:
+- Additional Resources:
+
