@@ -14,7 +14,7 @@ SocialCalc is a JavaScript-based spreadsheet application. This project brings th
       
       
       TEAM MEMBERS: 
-            1) Arusha Habib (2023UCM2362)
+            ** Arusha Habib (2023UCM2362)
             2) Vaibhav Kumar Rajput (2023UCA1801)
             3) Kanik Chawla (2023UCM2303)
             4) Aryaman Aggarwal (2023UCM2385)
