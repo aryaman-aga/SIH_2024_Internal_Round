@@ -14,12 +14,12 @@ SocialCalc is a JavaScript-based spreadsheet application. This project brings th
       
       
       TEAM MEMBERS: 
-            1) Arusha Habib (2023UCM2362)
-            2) Vaibhav Kumar Rajput (2023UCA1801)
-            3) Kanik Chawla (2023UCM2303)
-            4) Aryaman Aggarwal (2023UCM2385)
-            5) Lakshay Gupta (2023UCM2357)
-            6) Srijan (2023UCM2326)
+            1) MEMBER_1 2023UCM2362 - ARUSHA HABIB
+            2) MEMBER_2 2023UCA1801 - Vaibhav Kumar Rajput
+            3) MEMBER_3 2023UCM2303 - KANIK CHAWLA 
+            4) MEMBER_4 2023UCM2385 - ARYAMAN AGARWAL
+            5) MEMBER_5 2023UCM2357 - LAKSHAY GUPTA
+            6) MEMBER_6 2023UCM2326 - SRIJAN MAHAJAN
 
 
 ## Features
