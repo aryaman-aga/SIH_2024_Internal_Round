@@ -1,44 +1,9 @@
-//
-/*
-// SocialCalc Spreadsheet Formula Library
-//
-// Part of the SocialCalc package
-//
-// (c) Copyright 2008 Socialtext, Inc.
-// All Rights Reserved.
-//
-// The contents of this file are subject to the Artistic License 2.0; you may not
-// use this file except in compliance with the License. You may obtain a copy of 
-// the License at http://socialcalc.org/licenses/al-20/.
-//
-// Some of the other files in the SocialCalc package are licensed under
-// different licenses. Please note the licenses of the modules you use.
-//
-// Code History:
-//
-// Initially coded by Dan Bricklin of Software Garden, Inc., for Socialtext, Inc.
-// Based in part on the SocialCalc 1.1.0 code written in Perl.
-// The SocialCalc 1.1.0 code was:
-//    Portions (c) Copyright 2005, 2006, 2007 Software Garden, Inc.
-//    All Rights Reserved.
-//    Portions (c) Copyright 2007 Socialtext, Inc.
-//    All Rights Reserved.
-// The Perl SocialCalc started as modifications to the wikiCalc(R) program, version 1.0.
-// wikiCalc 1.0 was written by Software Garden, Inc.
-// Unless otherwise specified, referring to "SocialCalc" in comments refers to this
-// JavaScript version of the code, not the SocialCalc Perl code.
-//
-*/
 
    var SocialCalc;
-   if (!SocialCalc) SocialCalc = {}; // May be used with other SocialCalc libraries or standalone
-                                     // In any case, requires SocialCalc.Constants.
+   if (!SocialCalc) SocialCalc = {}; 
 
 SocialCalc.Formula = {};
 
-//
-// Formula constants for parsing:
-//
 
    SocialCalc.Formula.ParseState = {num: 1, alpha: 2, coord: 3, string: 4, stringquote: 5, numexp1: 6, numexp2: 7, alphanumeric: 8, specialvalue:9};
 
@@ -67,10 +32,6 @@ SocialCalc.Formula = {};
       "#REF!": "0,e#REF!", "#NAME?": "0,e#NAME?"};
 
 
-   // Operator Precedence table
-   //
-   // 1- !, 2- : ,, 3- M P, 4- %, 5- ^, 6- * /, 7- + -, 8- &, 9- < > = G(>=) L(<=) N(<>),
-   // Negative value means Right Associative
 
    SocialCalc.Formula.TokenPrecedence = {
       "!": 1,
@@ -84,18 +45,11 @@ SocialCalc.Formula = {};
       "<": 9, ">": 9, "G": 9, "L": 9, "N": 9
       };
 
-   // Convert one-char token text to input text:
+  
 
    SocialCalc.Formula.TokenOpExpansion = {'G': '>=', 'L': '<=', 'M': '-', 'N': '<>', 'P': '+'};
 
-   //
-   // Information about the resulting value types when doing operations on values (used by LookupResultType)
-   //
-   // Each object entry is an object with specific types with result type info as follows:
-   //
-   //    'type1a': '|type2a:resulta|type2b:resultb|...
-   //    Type of t* or n* matches any of those types not listed
-   //    Results may be a type or the numbers 1 or 2 specifying to return type1 or type2
+ 
    
 
    SocialCalc.Formula.TypeLookupTable = {
@@ -127,22 +81,6 @@ SocialCalc.Formula = {};
        propagateerror: { 'n*': '|n*:2|e*:2|', 'e*': '|e*:2|', 't*': '|t*:2|e*:2|', 'b': '|b:2|e*:2|'}
       };
 
-/* *******************
-
- parseinfo = SocialCalc.Formula.ParseFormulaIntoTokens(line)
-
- Parses a text string as if it was a spreadsheet formula
-
- This uses a simple state machine run on each character in turn.
- States remember whether a number is being gathered, etc.
- The result is parseinfo which is an array with one entry for each token:
-   parseinfo[i] = {
-     text: "the characters making up the parsed token",
-     type: the type of the token (a number),
-     opcode: a single character version of an operator suitable for use in the
-                  precedence table and distinguishing between unary and binary + and -.
-
-************************* */
 
 SocialCalc.Formula.ParseFormulaIntoTokens = function(line) {
 
@@ -223,7 +161,7 @@ SocialCalc.Formula.ParseFormulaIntoTokens = function(line) {
          if (cclass == charclass.num) {
             state = parsestate.coord;
             }
-         else if (cclass == charclass.alpha || ch == ".") { // alpha may be letters, numbers, "_", or "."
+         else if (cclass == charclass.alpha || ch == ".") { 
             str += ch;
             }
          else if (cclass == charclass.incoord) {
@@ -429,16 +367,6 @@ SocialCalc.Formula.ParsePushToken = function(parseinfo, ttext, ttype, topcode) {
 
    }
 
-/* *******************
-
- result = SocialCalc.Formula.evaluate_parsed_formula(parseinfo, sheet, allowrangereturn)
-
- Does the calculation expressed in a parsed formula, returning a value, its type, and error info
- returns: {value: value, type: valuetype, error: errortext}.
-
- If allowrangereturn is present and true, can return a range (e.g., "A1:A10" - translated from "A1|A10|")
-
-************************* */
 
 SocialCalc.Formula.evaluate_parsed_formula = function(parseinfo, sheet, allowrangereturn) {
 
@@ -460,17 +388,7 @@ SocialCalc.Formula.evaluate_parsed_formula = function(parseinfo, sheet, allowran
 
 }
 
-//
-// revpolish = SocialCalc.Formula.ConvertInfixToPolish(parseinfo)
-//
-// Convert infix to reverse polish notation
-//
-// Returns revpolish array with a sequence of references to tokens by number if successful.
-// Errors return a string with the error.
-//
-// Based upon the algorithm shown in Wikipedia "Reverse Polish notation" article
-// and then enhanced for additional spreadsheet things
-//
+
 
 SocialCalc.Formula.ConvertInfixToPolish = function(parseinfo) {
 
